@@ -1,0 +1,7 @@
+trigger sonar run
+trigger sonar run
+trigger sonar run
+trigger sonar workflow
+trigger sonar workflow
+trigger sonar workflow
+trigger sonar workflow
