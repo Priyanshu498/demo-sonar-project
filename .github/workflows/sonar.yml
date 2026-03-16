@@ -7,10 +7,11 @@ on:
 
 jobs:
   sonar:
+    name: sonar
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v2
@@ -20,6 +21,5 @@ jobs:
 
       - name: SonarQube Quality Gate Check
         uses: SonarSource/sonarqube-quality-gate-action@v1
-        timeout-minutes: 5
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
