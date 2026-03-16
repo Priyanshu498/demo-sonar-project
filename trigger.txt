@@ -1,2 +1,3 @@
 trigger sonar run
 trigger sonar run
+trigger sonar run
